@@ -19,9 +19,9 @@
 
 <body>
   <header>
-    <div class="fixed-top vh-100 sidebar-css sidebar-js bg-terquoise z-3">
+    <div class="fixed-top vh-100 sidebar-css sidebar-js bg-terquoise z-2">
         <div class="sidebar-hitbox d-flex justify-content-end">
-            <i class="sidebar-button bi bi-caret-right-fill fs-3 infront"></i>
+            <i class="sidebar-button bi bi-caret-right-fill fs-3"></i>
         </div>
         <div class="text-center fs-1 pb-5 mb-1 me-5">
             <img src="img/logo1.png" class="img-fluid" alt="Logo van Undefined">
@@ -70,8 +70,7 @@
 </header>
 
   <!-- Modal -->
-  <div class="ms-5">
-    <div class="modal fade" id="static-notloggedin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div class="modal fade" id="static-notloggedin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -91,11 +90,11 @@
   <button type="button" class="btn btn-primary trigger-notloggedin" data-bs-toggle="modal"
     data-bs-target="#static-notloggedin" hidden></button>
   <br><br>
-  <nav class="fixed-top">
+  <nav class="fixed-top mt-5">
     <div class="container-fluid c-h m-auto">
       <div class="row c-h d-flex align-items-center">
         <div class="col-md-3 p-0">
-          <input type="text behind" name="search" class="dropdown-toggle myInput" onkeyup="myFunction()"
+          <input type="text" name="search" class="dropdown-toggle myInput" onkeyup="myFunction()"
             data-bs-toggle="dropdown" placeholder="&nbsp;Search for students">
           <ul class="dropdown-menu myUL">
 
@@ -269,13 +268,12 @@
       </div>
     </div>
   </div>
-  </div>
-  
 
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/sidebar.js"></script>
 </body>
 
 </html>
