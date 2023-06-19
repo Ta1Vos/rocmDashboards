@@ -36,9 +36,11 @@
     overflow-y: scroll;
     height: 70vh;
 }
+
 .myUL li a {
     border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
+    margin-top: -1px;
+    /* Prevent double borders */
     background-color: #f6f6f6;
     padding: 12px;
     text-decoration: none;
@@ -99,7 +101,7 @@
     width: 320px;
     height: 200px;
     border-radius: 10px;
-   }
+}
 
 .card-1 {
     --primary-clr: #3e363f;
@@ -110,6 +112,7 @@
     height: 200px;
     border-radius: 10px;
 }
+
 .card-2 {
     --primary-clr: #d6aacb;
     --dot-clr: #D3F3F1;
@@ -129,20 +132,20 @@
     height: 200px;
     border-radius: 10px;
 }
-   
-   .card {
+
+.card {
     font-family: "Arial";
     color: #fff;
     display: grid;
     cursor: pointer;
     grid-template-rows: 50px 1fr;
-   }
-   
-   .card:hover .img-section {
+}
+
+.card:hover .img-section {
     transform: translateY(1em);
-   }
-   
-   .card-desc {
+}
+
+.card-desc {
     border-radius: 10px;
     padding: 15px;
     position: relative;
@@ -150,63 +153,65 @@
     display: grid;
     gap: 10px;
     background: var(--primary-clr);
-   }
-   
-   .card-time {
+}
+
+.card-time {
     font-size: 1.7em;
     font-weight: 500;
-   }
-   
-   .img-section {
+}
+
+.img-section {
     transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: var(--hover-card)
-   }
-   
-   .card-header {
+}
+
+.card-header {
     display: flex;
     align-items: center;
     width: 100%;
-   }
-   
-   .card-title {
+}
+
+.card-title {
     flex: 1;
     font-size: 0.9em;
     font-weight: 500;
-   }
-   
-   .card-menu {
+}
+
+.card-menu {
     display: flex;
     gap: 4px;
     margin-inline: auto;
-   }
-   
-   .card svg {
+}
+
+.card svg {
     float: right;
     max-width: 100%;
     max-height: 100%;
-   }
-   
-   .card .dot {
+}
+
+.card .dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background: var(--dot-clr);
     margin: 1.5px;
-   }
-   
-   .card .recent {
+}
+
+.card .recent {
     line-height: 0;
     font-size: 0.8em;
-   }
+}
 
-   .bg-icon {
+.bg-icon {
     color: var(--dot-clr);
-   }
+}
 
-  
-   
+.behind {
+    z-index: -1;
+}
 
-
-  
+.infront {
+    z-index: 5;
+}
