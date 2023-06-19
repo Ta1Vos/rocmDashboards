@@ -1,0 +1,41 @@
+body {
+    background-color: #E8E8E8;
+}
+
+.border-header {
+    background-color: #6F819E;
+}
+
+.bg-header {
+    background-color: #2F528F;
+}
+
+.bg-chat {
+    background-color: #F3F3F3;
+}
+
+.input-send {
+    width: fit-content;
+    height: fit-content;
+}
+
+.send-img {
+    height: 4vh;
+}
+
+.vh-81 {
+    min-height: 81vh;
+	max-height: 81vh;
+	overflow-y: auto;
+}
+
+.message {
+	background-color: white;
+	min-height: 4vh;
+	width: 50%;
+	padding: 5px;
+}
+
+.mb-3vh {
+    margin-bottom: 3vh;
+}

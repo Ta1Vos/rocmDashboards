@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e8e8e8;
+  font-family: sans-serif;
+}
+
+.text-message {
+  background-color: #668a99;
+}
+.days {
+  background-color: #668a99;
+}
+
+
+/* css voor sidebar */
+.sidebar-css {
+  background-color: rgba(111, 130, 159, 0.75);
+  width: 250px;
+  transition: 1.5s;
+  left: -220px;
+  max-height: 100vh;
+  overflow: auto;
+  z-index: 50;
+}
+
+.sidebar-css::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-item {
+  background-color: white;
+  border: 2px solid lightgray;
+  margin-top: 2.5vh;
+  margin-right: 5%;
+  margin-left: 10px;
+}
+
+.sidebar-toggled {
+  transition: 1s;
+  left: 0;
+}
+
+.sidebar-hitbox {
+  cursor: pointer;
+}
+
+.sidebar-button {
+  transition: 1.5s;
+}
+
+.turn-around {
+  transform: rotate(180deg);
+}

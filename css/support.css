@@ -1,0 +1,100 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-red: #ff0000;
+  --color-lime: #00ff00;
+  --color-blue: #0000ff;
+  --color-yellow: #ffff00;
+  --color-cyan: #00ffff;
+  --color-magenta: #ff00ff;
+  --color-silver: #c0c0c0;
+  --color-gray: #808080;
+  --color-maroon: #800000;
+  --color-olive: #808000;
+  --color-green: #008000;
+  --color-purple: #800080;
+  --color-teal: #008080;
+  --color-navy: #000080;
+  --color-indian-red: #cd5c5c;
+  --color-light-coral: #f08080;
+  --color-salmon: #fa8072;
+  --color-dark-salmon: #e9967a;
+  --color-light-salmon: #ffa07a;
+  --color-crimson: #dc143c;
+  --color-fire-brick: #b22222;
+  --color-dark-red: #8b0000;
+  --color-pink: #ffc0cb;
+  --color-light-pink: #ffb6c1;
+  --color-hot-pink: #ff69b4;
+  --color-deep-pink: #ff1493;
+  --color-medium-violet-red: #c71585;
+  --color-pale-violet-red: #db7093;
+  --color-coral: #ff7f50;
+  --color-tomato: #ff6347;
+  --color-orange-red: #ff4500;
+  --color-dark-orange: #ff8c00;
+  --color-orange: #ffa500;
+  --color-gold: #ffd700;
+  --color-yellow-green: #9acd32;
+  --color-dark-khaki: #bdb76b;
+  --color-khaki: #f0e68c;
+  --color-pale-goldenrod: #eee8aa;
+  --color-lemon-chiffon: #fffacd;
+  --color-light-goldenrod-yellow: #fafad2;
+  --color-dark-olive-green: #556b2f;
+  --color-olive-drab: #6b8e23;
+  --color-yellow: #ffff00;
+  --color-green-yellow: #adff2f;
+  --color-chartreuse: #7fff00;
+  --color-lawngreen: #7cfc00;
+  --color-limegreen: #32cd32;
+  --color-lime: #00ff00;
+  --color-springgreen: #00ff7f;
+  --color-medium-springgreen: #00fa9a;
+  --color-dark-green: #006400;
+  --color-medium-sea-green: #3cb371;
+  --color-sea-green: #2e8b57;
+  --color-forest-green: #228b22;
+  --color-green: #008000;
+}
+
+body{
+  background-color: #000000;
+}
+.nav-color {
+  background-color: var(--color-blue);
+}
+
+.white {
+  background-color: var(--color-white);
+}
+
+.space {
+  margin-left: 10px;
+}
+
+.small-icon {
+  width: 1px;
+  height: 1px;
+}
+
+.question-box {
+  background-color: var(--color-cyan);
+}
+
+.customs {
+    cursor: pointer;
+  }
+  
+  .expanded-container {
+    width: 1200px;
+    height: 0;
+    overflow: hidden;
+    transition: 1s ease;
+    opacity: 0;
+  }
+
+  .expanded-container.expand {
+    height: auto;
+    opacity: 1;
+  }

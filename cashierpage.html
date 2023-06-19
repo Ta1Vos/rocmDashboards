@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- chartjs -->
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/cashierpage.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="fixed-top vh-100 sidebar-css sidebar-js bg-terquoise">
+            <div class="sidebar-hitbox d-flex justify-content-end">
+                <i class="sidebar-button bi bi-caret-right-fill fs-3"></i>
+            </div>
+            <div class="text-center fs-1 pb-5 mb-1 me-5">
+                <img src="img/logo1.png" class="img-fluid" alt="Logo van Undefined">
+            </div>
+            <ul class="nav justify-content-center flex-column me-5">
+                <!-- Main pages -->
+                <li class="nav-item mb-2 w-50 rounded">
+                    <a class="nav-link" href="login.html" aria-current="page">Inloggen</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link" href="index.html" aria-current="page">Home pagina</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link" href="support.html">Support pagina</a>
+                </li>
+                <li class="nav-item rounded mb-5">
+                    <a class="nav-link" href="messages.html">Chatbot</a>
+                </li>
+                <!-- dashboards -->
+                <li class="nav-item rounded">
+                    <a class="nav-link dashboard-btn" href="DashboardCrypto.html">Crypto dashboard</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link dashboard-btn" href="dashboard-students.html">Student Dashboard</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link dashboard-btn" href="valuta.html">Valuta dashboard</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link dashboard-btn" href="cashierpage.html">Kassabon pagina</a>
+            
+                <li class="nav-item rounded">
+                    <a class="nav-link  dashboard-btn" href="dashboord-weer.html">Weer dashboard</a>
+                </li>
+            </ul>
+            <ul class="nav">
+
+            </ul>
+        </div>
+        <!-- Alert appears for users with small devices -->
+        <div class="fixed-bottom d-block d-sm-none alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>LET OP!</strong> Het kan bij deze schermgrootte zijn dat niet alles meer leesbaar is. Het is
+            aangeraden om een groter scherm/apparaat te gebruiken.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </header>
+    <main class="ps-md-5 ms-2">
+        <div class="container-fluid m-auto">
+            <div class="introduction-text w-75 m-auto p-3 mt-5 fs-4 border-bg-terquoise bg-light rounded-2">
+                <span class="text-black">Welkom</span> op de kassabon pagina! Op deze pagina kunt u de gegevens van alle
+                kassabonnen bijhouden, van wat er verkocht wordt tot welke bonnen er overblijven. Ook krijgt u toegang
+                tot alle totalen van producten en totale winst!
+            </div>
+            <div class="loading-div text-center">
+                <div class="rotating-animation">
+                    <i class="bi bi-arrow-repeat fs-1"></i>
+                </div>
+                <p class="fs-5 loading-text">Laden..</p>
+            </div>
+            <div class="admin-content">
+                <div class="results row m-auto mt-5">
+                    <div class="result-info col-12 col-md-6 bg-terquoise rounded-4">
+    
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <canvas class="result-graph">
+    
+                        </canvas>
+                    </div>
+                </div>
+                <div class="row products mt-5">
+                    <div class="product-list row col-12 col-md-11 bg-terquoise py-3 m-auto mt-5 rounded-1">
+                        <div class="row col-12 bg-secondary text-light border border-2 p-2 m-auto">
+                            <div class="col-4">Product</div>
+                            <div class="col-3">Tot. Omzet</div>
+                            <div class="col-3">BTW(%)</div>
+                            <div class="col-1">Gem. winst</div>
+                            <div class="col-1 text-end">Aantal</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 m-auto mt-3 vh-35">
+                        <canvas class="product-graph">
+    
+                        </canvas>
+                    </div>
+                </div>
+                <div class="deposit-vouchers bg-terquoise">
+    
+                </div>
+                <div class="receipt-container bg-terquoise p-3 mt-5 text-center rounded-4">
+                    <div class="receipts"></div>
+                    <button class="load-receipts m-auto rounded-2 clickable">Laad meer bonnen in</button>
+                </div>
+                <div class="container-fluid text-center mt-5">
+                    &copy;2023 Created by Tim Vos
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="js/sidebar.js"></script>
+    <script defer src="js/receipts.js"></script>
+</body>
+
+</html>

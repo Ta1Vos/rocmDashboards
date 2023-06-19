@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(68, 68, 68);
+}
+
+div::-webkit-scrollbar {
+    display: none;
+}
+
+.bg-terquoise {
+    background-color: rgba(102, 138, 153, 0.45);
+}
+
+.border-bg-terquoise {
+    border: 1px solid #668A99;
+}
+
+.bg-lightgray {
+    background-color: rgb(228, 226, 226);
+}
+
+.vh-35 {
+    height: 35vh;
+}
+
+.display-none {
+    display: none;
+}
+
+.receipt-content {
+    max-height: 25vh;
+    overflow: auto;
+}
+
+.product-list {
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.non-clickable {
+    cursor: default;
+}
+
+.introduction-text {
+    margin-bottom: 20vh !important;
+}
+
+.rotating-animation {
+    transform: rotate(0deg);
+    animation: loadinganimation 2s linear 0s infinite normal forwards;
+}
+
+.admin-content {
+    display: none;
+}
+
+@keyframes loadinganimation {
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

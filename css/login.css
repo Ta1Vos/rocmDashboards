@@ -1,0 +1,73 @@
+.l-b {
+    height: 450px;
+    width: 450px;
+}
+
+input {
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+input:focus {
+    outline: 0;
+    border-bottom: 2px solid black;
+}
+
+.bg-login-button {
+    background-color: #668A99;
+    border: 1px solid black
+}
+
+.bg-login-button:hover {
+    transition: ease-out 0.4s;
+    background-color: #668A92;
+    transform: translateY(-1px);
+}
+
+.c-opacity {
+    opacity: 90%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+
+.error {
+    border-bottom: 2px solid red;
+}
+
+.text-decoration-color-warning {
+    text-decoration: none;
+   }
+
+   .text-decoration-color-warning:hover {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+   }
+
+   .text-decoration-color-danger {
+    text-decoration: none;
+   }
+   .text-decoration-color-danger:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+   }
+
+   .text-decoration-color-info {
+    text-decoration: none;
+   }
+   .text-decoration-color-info:hover {
+    text-decoration: underline;
+    text-decoration-color: cyan;
+   }
+
+@media screen and (max-width: 450px) {
+    .l-b {
+        height: 470px;
+        width: auto;
+    }
+}

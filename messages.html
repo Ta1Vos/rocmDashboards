@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/messages.css">
+
+    <title>Chat Interface</title>
+</head>
+
+<body>
+    <header>
+        <div class="fixed-top vh-100 sidebar-css sidebar-js bg-terquoise">
+            <div class="sidebar-hitbox d-flex justify-content-end">
+                <i class="sidebar-button bi bi-caret-right-fill fs-3"></i>
+            </div>
+            <div class="text-center fs-1 pb-5 mb-1 me-5">
+                <img src="img/logo1.png" class="img-fluid" alt="Logo van Undefined">
+            </div>
+            <ul class="nav justify-content-center flex-column me-5">
+                <!-- Main pages -->
+                <li class="nav-item mb-2 w-50 rounded">
+                    <a class="nav-link" href="login.html" aria-current="page">Inloggen</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link" href="index.html" aria-current="page">Home pagina</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link" href="support.html">Support pagina</a>
+                </li>
+                <li class="nav-item rounded mb-5">
+                    <a class="nav-link" href="messages.html">Chatbot</a>
+                </li>
+                <!-- dashboards -->
+                <li class="nav-item rounded">
+                    <a class="nav-link dashboard-btn" href="DashboardCrypto.html">Crypto dashboard</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link dashboard-btn" href="dashboard-students.html">Student Dashboard</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link dashboard-btn" href="valuta.html">Valuta dashboard</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link dashboard-btn" href="cashierpage.html">Kassabon pagina</a>
+            
+                <li class="nav-item rounded">
+                    <a class="nav-link  dashboard-btn" href="dashboord-weer.html">Weer dashboard</a>
+                </li>
+            </ul>
+            <ul class="nav">
+
+            </ul>
+        </div>
+        <!-- Alert appears for users with small devices -->
+        <div class="fixed-bottom d-block d-sm-none alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>LET OP!</strong> Het kan bij deze schermgrootte zijn dat niet alles meer leesbaar is. Het is
+            aangeraden om een groter scherm/apparaat te gebruiken.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="container-fluid w-75 bg-chat">
+
+            <div class="container-fluid border border-2 messages vh-81 pt-3">
+                Sent messages:
+            </div>
+            <div class="row fixed-bottom">
+                <div class="col-12 col-md-9 row bg-header rounded-5 py-3 m-auto d-flex align-items-center">
+                    <div class="col-sm-1"></div>
+                    <div class="col-9">
+                        <input type="text" title="message" name="message"
+                            class="w-100 rounded-4 chatbot-input py-3 ps-2">
+                    </div>
+                    <div class="col-2 d-flex align-items-center">
+                        <button type="submit" title="send message" class="rounded-5 input-send p-3"><img
+                                src="img/chatbot/send.png" class="send-img" alt="send button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="js/sidebar.js"></script>
+    <script defer type="application/javascript" src="js/chatbot.js"></script>
+</body>
+
+</html>
+
+</html>
